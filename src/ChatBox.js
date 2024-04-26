@@ -29,9 +29,12 @@ const Chat = () => {
       setFormData({ message: '' });
       scrollToBottom();
 
-      const response = await axios.post('http://206.12.88.44:5000/Answer', {
-        question: formData.message,
-      });
+      const response = await axios.post(
+        'https://70fe-206-12-88-44.ngrok-free.app/Answer',
+        {
+          question: formData.message,
+        }
+      );
 
       const assistant_message = response.data.answer
         .split('<|assistant|>')[1]
