@@ -81,7 +81,7 @@ const Chat = () => {
           height: 'calc(100% - 180px)',
           p: 2,
           mt: 8,
-          mb: 30,
+          mb: 10,
         }}
       >
         {messages.map((message, index) => (
